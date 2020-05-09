@@ -40,6 +40,7 @@ def hit? (card_total)
   prompt_user; 
   answer = get_user_input;
   until('h', 's').include? answer do
+    invalid_command; 
     prompt_user;
     answer = get_user_input; 
   end 
