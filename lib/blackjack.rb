@@ -39,7 +39,7 @@ def hit? (card_total)
   # code hit? here
   prompt_user; 
   answer = get_user_input;
-  until('h', 's')  
+  until('h', 's').include? 
   end 
   if answer === 'h'
     deal_card + card_total; 
